@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <title>Whiteboard</title>
+
+    <link rel="stylesheet" href="css/board.css"/>
+    <!-- using bootstrap stylesheet -->
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Lato:400,100,300,900' rel='stylesheet' type='text/css'>    
+    
+</head>
+    <h2>Whiteboard in html canvas</h2>
+    <div id="menu">
+        <select class="form-control" onchange="changeColor()"  id="colorOption">
+            <option>Color</option>
+            <option value="black">black</option>
+            <option value="orange">orange</option>
+            <option value="purple">purple</option>
+        </select>
+         <select class="form-control" onchange="changeBackground()" id="backgroundOption">
+             <option>Background</option>
+            <option value="grid">grid</option>
+            <option value="black">black</option>
+            <option value="white">white</option>
+        </select>
+        <input type="submit" value="clear board" onclick ="clearBoard()" class="btn btn-ms btn-default"/>
+    
+    
+    
+    </div>
+     <div id="canvasHolder" >
+     <canvas id="boardCanvas" width="1210px" height="500px"></canvas>
+    </div>    
+    
+    <script src="javascript/board.js"></script>
+</body>
+</html>
